@@ -15,7 +15,7 @@ This project is largely based on and reuses code from [smolvlm-realtime-webcam](
 - Real-time camera feed processing
 - AI-powered image analysis using llama-server
 - Image similarity detection to reduce redundant AI calls
-- Event logging with ClickHouse database
+- Event logging with [chDB (ClickHouse in-process)](https://github.com/chdb-io/chdb)
 - Web interface with live updates
 - Configurable processing intervals
 - CORS support for cross-origin requests
@@ -30,23 +30,19 @@ This project is largely based on and reuses code from [smolvlm-realtime-webcam](
 ## Installation
 
 1. Install Python dependencies:
-```bash
-pip install Pillow imagehash numpy chdb
-```
+    ```bash
+    pip install -r requirements.txt
+    ```
+1. Install [llama-server](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
 
-2. Install llama-server and the SmolVLM model:
-```bash
-# Follow llama-server installation instructions
-# Make sure to have the SmolVLM-500M-Instruct-GGUF model
-```
 
 ## Usage
 
 1. Start the server:
-```bash
-python server.py
-```
-
+    ```bash
+    python server.py
+    ```
+    Model [ggml-org/SmolVLM-500M-Instruct-GGUF](https://huggingface.co/ggml-org/SmolVLM-500M-Instruct-GGUF) will be downloaded automatically
 2. Open `index.html` in your web browser
 3. Grant camera permissions when prompted
 4. Click "Start" to begin processing
