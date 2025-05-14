@@ -8,7 +8,7 @@ This project is largely based on and reuses code from [smolvlm-realtime-webcam](
 
 ## Demo
 
-![Demo](./demo.png)
+![Demo](/demo.png)
 
 ## Features
 
