@@ -6,6 +6,10 @@ A real-time camera interaction application that uses AI to analyze video frames 
 
 This project is largely based on and reuses code from [smolvlm-realtime-webcam](https://github.com/ngxson/smolvlm-realtime-webcam) by [ngxson](https://github.com/ngxson). We extend our sincere gratitude for their excellent work and contribution to the open-source community.
 
+## Demo
+
+![Demo](./demo.png)
+
 ## Features
 
 - Real-time camera feed processing
